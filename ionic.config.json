@@ -1,7 +1,8 @@
 {
-  "name": "heavy-vegan",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
+    "name": "HEAVY VEGAN",
+    "integrations": {
+        "capacitor": {}
+    },
+    "type": "angular",
+    "id": "ad4568a3"
 }
