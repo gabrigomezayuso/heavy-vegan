@@ -46,10 +46,15 @@ ion-button:hover {
 }
 
 img {
-    width: auto !important;
-    align-items: center;
+    width: 80%;
+    margin: auto;
+    display: block;
 }
 
 .color-negro {
     color: black;
+}
+
+.center {
+    margin-top: 45%;
 }

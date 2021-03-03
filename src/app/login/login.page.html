@@ -5,9 +5,18 @@
 </ion-header>
 
 <ion-content overflow-scroll="true" scroll="true" color="primary" padding align-self-center>
-    <img src="../../assets/img/logo.png" width="20%" alt="">
-    <ion-input placeholder="correo" class="center" type="email" type="text" [(ngModel)]="username"></ion-input>
-    <ion-input placeholder="contraseña" class="center" type="password" [(ngModel)]="password"></ion-input>
-    <ion-button fill="solid" expand="block" color="dark" (click)="login()">INICIAR SESIÓN</ion-button>
-    <ion-button fill="solid" expand="block" color="dark" (click)="register()">REGISTRAR</ion-button>
+    <ion-grid class="center">
+        <ion-row>
+            <ion-col align-self-center>
+                <img src="../../assets/SVG/Recurso 1.svg" width="20%" alt="" class="img">
+                <br>
+                <br> <br>
+                <br>
+                <ion-input placeholder="CORREO ELECTRONICO" type="email" type="text" [(ngModel)]="username"></ion-input>
+                <ion-input placeholder="CONTRASEÑA" type="password" [(ngModel)]="password"></ion-input>
+                <ion-button fill="solid" expand="block" color="dark" (click)="login()">INICIAR SESIÓN</ion-button>
+                <ion-button fill="solid" expand="block" color="dark" (click)="register()">REGISTRAR</ion-button>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
 </ion-content>

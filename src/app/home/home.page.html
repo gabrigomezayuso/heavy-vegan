@@ -1,20 +1,21 @@
 <ion-header>
     <ion-toolbar>
         <ion-title>
-            HEAVY VEGAN
+            <img src="../../assets/SVG/Recurso 3.svg" width="10%" alt="">
         </ion-title>
     </ion-toolbar>
 </ion-header>
 
-<ion-content class="center" color="primary">
-    <ion-grid>
+<ion-content color="primary">
+    <ion-grid class="center">
         <ion-row>
             <ion-col align-self-center>
-                <img src="../../assets/img/logo.png" width="20%" alt="">
                 <!-- <ion-img [src]="item.src"></ion-img> -->
-
-                <ion-button [routerLink]="['/register']" expand="block" color="success">Registrar</ion-button>
+                <img src="../../assets/SVG/Recurso 5.svg" width="10%" alt="" class="imga">
+                <br>
+                <br>
                 <ion-button color="light" [routerLink]="['/login']" expand="block">Iniciar sesión</ion-button>
+                <ion-button [routerLink]="['/register']" expand="block" color="danger">Registrar</ion-button>
             </ion-col>
         </ion-row>
     </ion-grid>
