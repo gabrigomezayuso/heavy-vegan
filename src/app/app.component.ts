@@ -35,7 +35,7 @@ export class AppComponent {
         if (state) {
           this.router.navigate(['tabs']);
         } else {
-          this.router.navigate(['home']);
+          this.router.navigate(['first']);
         }
       });
     });

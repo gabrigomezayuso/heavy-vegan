@@ -7,7 +7,11 @@ const routes: Routes = [
   //   path: '',
   //   loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
   // },
-  { path: "", redirectTo: "/home", pathMatch: "full" },
+  // { path: "", redirectTo: "/first", pathMatch: "full" },
+  {
+    path: '',
+    loadChildren: () => import('./first/first.module').then( m => m.FirstPageModule)
+  }, 
   { path: "login", loadChildren: "./login/login.module#LoginPageModule" },
   { path: "home", loadChildren: "./home/home.module#HomePageModule" },
   { path: "register", loadChildren: "./register/register.module#RegisterPageModule" },
@@ -21,7 +25,8 @@ const routes: Routes = [
   {
     path: 'profile',
     loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
-  },  {
+  },
+  {
     path: 'inicio',
     loadChildren: () => import('./inicio/inicio.module').then( m => m.InicioPageModule)
   },
@@ -32,6 +37,14 @@ const routes: Routes = [
   {
     path: 'comprar',
     loadChildren: () => import('./comprar/comprar.module').then( m => m.ComprarPageModule)
+  },
+  {
+    path: 'first',
+    loadChildren: () => import('./first/first.module').then( m => m.FirstPageModule)
+  },
+  {
+    path: 'second',
+    loadChildren: () => import('./initial/second/second.module').then( m => m.SecondPageModule)
   }
 
 
